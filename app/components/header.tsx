@@ -1,14 +1,19 @@
+
 "use client";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { zodiak } from "../fonts";
+import { satoshi } from "../fonts";
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productMenuOpen, setProductMenuOpen] = useState(false);
+  const [caseStudiesOpen, setCaseStudiesOpen] = useState(false);
 
   return (
-    <header className={`sticky top-0 z-50 bg-lgreen border-b border-gray-700 ${zodiak.className}`}>
+    <header
+      className={`sticky top-0 z-50 bg-lgreen border-b border-gray-700 ${satoshi.className}`}
+    >
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-[1600px] items-center justify-between p-6 lg:px-8"
@@ -50,30 +55,62 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Desktop Nav */}
-        <div className="hidden lg:flex lg:gap-x-12 text-[16px]  text-[#CEEAD5]">
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex lg:gap-x-12 text-[20px]  text-[#CEEAD5]">
+          <Link href="#">Home</Link>
+          <Link href="#">About</Link>
+          <Link href="#">Career</Link>
+
+          {/* Case Studies Dropdown */}
           <div className="relative">
             <button
-              onClick={() => setProductMenuOpen(!productMenuOpen)}
+              onClick={() => setCaseStudiesOpen(!caseStudiesOpen)}
               className="flex items-center gap-x-1"
             >
-              Home
+              Case Studies
               <svg
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
                 className="size-5 text-gray-500"
-              ></svg>
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 0 1 1.06 0L10 
+                  10.92l3.72-3.71a.75.75 0 1 1 
+                  1.06 1.06l-4.25 
+                  4.25a.75.75 0 0 1-1.06 
+                  0L5.23 8.27a.75.75 0 0 1 0-1.06Z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </button>
+            {caseStudiesOpen && (
+              <div className="absolute left-0 mt-2 w-48 rounded-md bg-lgreen shadow-lg ring-1 ring-white/10">
+                <Link
+                  href="#"
+                  className="block px-4 py-2 text-sm text-white hover:bg-white/10"
+                >
+                  Case Study 1
+                </Link>
+                <Link
+                  href="#"
+                  className="block px-4 py-2 text-sm text-white hover:bg-white/10"
+                >
+                  Case Study 2
+                </Link>
+                <Link
+                  href="#"
+                  className="block px-4 py-2 text-sm text-white hover:bg-white/10"
+                >
+                  Case Study 3
+                </Link>
+              </div>
+            )}
           </div>
 
-          <Link href="#">About</Link>
-          <Link href="#">Career</Link>
-          <Link href="#">Case Studies</Link>
           <Link href="#">Contact Us</Link>
         </div>
-
-
       </nav>
 
       {/* Mobile Menu */}
@@ -111,12 +148,32 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="mt-6">
+          <div className="mt-6 space-y-2">
+            <Link
+              href="#"
+              className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
+            >
+              Home
+            </Link>
+            <Link
+              href="#"
+              className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
+            >
+              About
+            </Link>
+            <Link
+              href="#"
+              className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
+            >
+              Career
+            </Link>
+
+            {/* Mobile Case Studies Dropdown */}
             <button
-              onClick={() => setProductMenuOpen(!productMenuOpen)}
+              onClick={() => setCaseStudiesOpen(!caseStudiesOpen)}
               className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
             >
-              Product
+              Case Studies
               <svg
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -135,64 +192,34 @@ export default function Header() {
                 />
               </svg>
             </button>
-            {productMenuOpen && (
-              <div className="mt-2 space-y-2">
+            {caseStudiesOpen && (
+              <div className="ml-4 space-y-2">
                 <Link
                   href="#"
-                  className="block rounded-lg px-6 py-2 text-sm font-semibold text-white hover:bg-white/5"
+                  className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/5"
                 >
-                  Analytics
+                  Case Study 1
                 </Link>
                 <Link
                   href="#"
-                  className="block rounded-lg px-6 py-2 text-sm font-semibold text-white hover:bg-white/5"
+                  className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/5"
                 >
-                  Engagement
+                  Case Study 2
                 </Link>
                 <Link
                   href="#"
-                  className="block rounded-lg px-6 py-2 text-sm font-semibold text-white hover:bg-white/5"
+                  className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/5"
                 >
-                  Security
-                </Link>
-                <Link
-                  href="#"
-                  className="block rounded-lg px-6 py-2 text-sm font-semibold text-white hover:bg-white/5"
-                >
-                  Integrations
-                </Link>
-                <Link
-                  href="#"
-                  className="block rounded-lg px-6 py-2 text-sm font-semibold text-white hover:bg-white/5"
-                >
-                  Automations
+                  Case Study 3
                 </Link>
               </div>
             )}
 
             <Link
               href="#"
-              className="mt-4 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
-            >
-              Features
-            </Link>
-            <Link
-              href="#"
               className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
             >
-              Marketplace
-            </Link>
-            <Link
-              href="#"
-              className="block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
-            >
-              Company
-            </Link>
-            <Link
-              href="#"
-              className="mt-4 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
-            >
-              Log in
+              Contact Us
             </Link>
           </div>
         </div>

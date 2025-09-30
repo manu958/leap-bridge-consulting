@@ -6,10 +6,12 @@ export default function ScrumPage() {
         <section className="w-full bg-[#ecf6f2] py-16">
             <div className="max-w-3xl mx-auto px-6 text-[#1B3233]">
 
-                {/* Section Heading */}
-                <h2 className={`text-[40px] font-semibold mb-8 ${zodiak.className}`}>
+
+
+                <h2 className={`text-[32px] md:text-[40px] font-normal leading-[125%] mb-8 ${zodiak.className}`}>
                     Things we can do for <br /> you and more.
                 </h2>
+
 
                 {/* Item 1 */}
                 <div className="border-t border-[#1B3233] py-6 flex gap-4">
@@ -22,7 +24,7 @@ export default function ScrumPage() {
                         />
                     </div>
                     <div>
-                        <h3 className={`text-lg text-[26px] font-semibold mb-2 ${zodiak.className}`}>
+                        <h3 className={`text-lg text-[26px] font-normal leading-[120%] mb-2 ${zodiak.className}`}>
                             Management
                         </h3>
                         <p className={`text-sm text-[20px] leading-relaxed ${satoshi.className}`}>
@@ -32,8 +34,6 @@ export default function ScrumPage() {
                     </div>
                 </div>
 
-
-                {/* Item 2 */}
                 <div className="border-t border-[#1B3233] py-6 flex gap-4">
                     <div className="w-full max-w-[100px] flex">
                         <Image
@@ -44,7 +44,7 @@ export default function ScrumPage() {
                         />
                     </div>
                     <div>
-                        <h3 className={`text-lg text-[26px] font-semibold mb-2 ${zodiak.className}`}>
+                        <h3 className={`text-lg text-[26px] font-normal leading-[120%] mb-2 ${zodiak.className}`}>
                             Digital
                         </h3>
                         <p className={`text-sm text-[20px]  leading-relaxed ${satoshi.className}`}>
@@ -54,7 +54,6 @@ export default function ScrumPage() {
                     </div>
                 </div>
 
-                {/* Item 3 */}
                 <div className="border-t border-[#1B3233] py-6 flex gap-4">
                     <div className="w-full max-w-[100px] flex">
                         <Image
@@ -65,7 +64,7 @@ export default function ScrumPage() {
                         />
                     </div>
                     <div>
-                        <h3 className={`text-lg text-[26px] font-semibold mb-2 ${zodiak.className}`}>
+                        <h3 className={`text-lg text-[26px] font-normal leading-[120%] mb-2 ${zodiak.className}`}>
                             Design
                         </h3>
                         <p className={`text-sm text-[20px] leading-relaxed ${satoshi.className}`}>
@@ -75,7 +74,6 @@ export default function ScrumPage() {
                     </div>
                 </div>
 
-                {/* Item 4 */}
                 <div className="border-t  py-6 flex gap-4">
                     <div className="w-full max-w-[100px] flex">
                         <Image
@@ -86,7 +84,7 @@ export default function ScrumPage() {
                         />
                     </div>
                     <div>
-                        <h3 className={`text-lg text-[26px] font-semibold mb-2 ${zodiak.className}`}>
+                        <h3 className={`text-lg text-[26px] font-normal leading-[120%] mb-2 ${zodiak.className}`}>
                             SCRUM
                         </h3>
                         <p className={`text-sm text-[20px]  leading-relaxed ${satoshi.className}`}>
@@ -96,8 +94,8 @@ export default function ScrumPage() {
                     </div>
                 </div>
 
-                <div className="text-center mt-10">
-                    <button className="bg-[#1B3233] text-[#ECF6F2] px-6 py-2 rounded-full text-sm  transition">
+                <div className="text-center h-13 px-8 mt-10">
+                    <button className="bg-[#1B3233] text-[#ECF6F2] text-xl px-6 py-2 rounded-full text-sm  transition">
                         Contact us
                     </button>
                 </div>

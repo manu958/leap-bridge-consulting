@@ -7,7 +7,6 @@ export default function GreatResult() {
         <section className="w-full bg-[#1b3233] text-white py-16">
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-                {/* Left Image Section */}
                 <div className="p-10">
                     <Image
                         src="\assests\header\logoimage\results_ComboTwo.svg"
@@ -18,7 +17,6 @@ export default function GreatResult() {
                     />
                 </div>
 
-                {/* Right Text Section */}
                 <div className="md:ps-16 md:text-start text-center">
                     <h2 className={` text-[40px] font-thin leading-snug mb-4 ${zodiak.className}`}>
                         Not only consulting,<br /> not only great results

@@ -3,14 +3,6 @@ import Image from "next/image";
 import { zodiak } from "@/app/fonts";
 import { satoshi } from "@/app/fonts";
 
-    // height: 800px;
-    // width: 800px;
-    // border-radius: 50%;
-    // position: absolute;
-    // top: 0%;
-    // left: 0;
-    // transform: translate(-50%, -50%);
-    // background-color: #1b3233;
 export default function ConsultationSection() {
     return (
         <section className="bg-[#DAEBE3] py-16 px-4 relative overflow-hidden">
@@ -27,8 +19,8 @@ export default function ConsultationSection() {
                         />
                 </div>
 
-                <div className="text-center md:text-left">
-                    <h2 className={`text-[40px] md:text-3xl font-thin text-[#1B3233] mb-4 ${zodiak.className}`}>
+                <div className="bookbox text-center md:text-left">
+                    <h2 className={`text-[40px] md:text-4xl font-thin text-[#1B3233] mb-4 ${zodiak.className}`}>
                         Book your free consultation today!
                     </h2>
                     <p className={`text-[20px] text-[#1B3233] mb-6 ${satoshi.className}`}>

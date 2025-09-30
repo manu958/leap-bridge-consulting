@@ -110,11 +110,10 @@ const GoodInsights = () => {
                     ))}
                 </div>
 
-                {/* Button */}
-                <div className="mt-12 text-center">
+                <div className="mt-12 text-center justify-center">
                     <button
                         type="button"
-                        className={`px-8 py-3 border border-transparent text-base font-medium rounded-[40px] text-[#ECF6F2] bg-[#1B3233] ${satoshi.className}`}
+                        className={`h-[52px] px-[32px] py-3 text-xl border border-transparent font-normal rounded-[50px] text-[#ECF6F2] bg-[#1B3233] ${satoshi.className}`}
                     >
                         See all posts
                     </button>
