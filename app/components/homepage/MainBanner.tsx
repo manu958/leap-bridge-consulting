@@ -1,5 +1,7 @@
 import React from 'react'
 import { satoshi, zodiak } from "@/app/fonts";
+import Image
+ from 'next/image';
 
 const MainBanner = () => {
     return (
@@ -25,7 +27,7 @@ const MainBanner = () => {
 
             </div>
             <div className="mainbanner">
-                <img
+                <Image
                     src="\assests\header\images\mainimg.webp"
                     alt="Logo"
                     width={12}
