@@ -1,12 +1,61 @@
 @import "tailwindcss";
-
+.bg-lgreen {
+    background-color: #1b3233 !important;
+}
 header.bg-lgreen {
     background-color: #1B3233;
 }
 
 footer.bg-lgreen {
-    background-color: #1B3233;
+    background-color: #1b3233;
 }
 p.text-lg.mb-6.leading-relaxed {
     color: darkgray;
 }
+
+.mainbanner img {
+    text-align: center;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    border: 50px solid #fff;
+    border-bottom: 0px;
+    width: 78%;
+    margin: auto !important;
+}
+
+.heading-h {
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subtitle-h {
+    font-size: 32px !important;
+    font-weight: 300 !important;
+    line-height: 135% !important;
+}
+
+.map-img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.left-sticky-process {
+    grid-row-gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 470px;
+    display: flex
+;
+}
+
+.right-sticky-process {
+    grid-row-gap: 41px;
+    flex-direction: column;
+    display: flex
+;
+}
+
