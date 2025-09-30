@@ -7,7 +7,7 @@ const ProblemSolv = () => {
 
         <section className="bg-[#e8f5f1] min-h-screen flex flex-col md:flex-row">
             <div className="container mx-auto px-4 flex flex-wrap">
-                <div className="process md:w-1/2 w-full p-8 md:sticky md:top-[50px] md:h-screen">
+                <div className="process md:w-1/2 w-full md:p-8 py-8 md:sticky md:top-[50px] md:h-screen">
                     <div className="text-lg max-w-md  mb-3">
                         <h2 className={`${zodiak.className} text-[34px] text-[#1B3233] mb-3`}>
                             Process oriented for solving problems
@@ -25,7 +25,7 @@ const ProblemSolv = () => {
                 </div>
 
 
-<div className="md:w-1/2 w-full p-8 space-y-6 right-sticky-process text-[#1B3233]">
+<div className="md:w-1/2 w-full md:p-8 py-8 space-y-6 right-sticky-process text-[#1B3233]">
 
   <div className="bg-[#d6ebe2] rounded-lg p-8 md:p-16 lg:p-28">
     <h3 className={`${zodiak.className} text-[60px] md:text-[80px] lg:text-[100px] font-light opacity-30 mb-8 md:mb-12 lg:mb-16`}>

@@ -8,8 +8,8 @@ export default function ScrumPage() {
 
 
 
-                <h2 className={`text-[32px] md:text-[40px] font-normal leading-[125%] mb-8 ${zodiak.className}`}>
-                    Things we can do for <br /> you and more.
+                <h2 className={`text-[32px] md:text-[40px] font-normal max-w-[470px] leading-[125%] mb-8 ${zodiak.className}`}>
+                    Things we can do for you and more.
                 </h2>
 
 

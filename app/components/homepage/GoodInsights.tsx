@@ -75,7 +75,7 @@ const GoodInsights = () => {
                         <article
                             key={index}
                             className="hover:bg-[#aac5b4] rounded-xl shadow-lg overflow-hidden
-             transition-colors duration-300 bg-[#daebe3]  w-4/5 mx-auto"
+             transition-colors duration-300 bg-[#daebe3]  md:w-4/5 mx-auto"
                         >
                             <div className="p-5 md:p-8 rounded-2xl">
                                 <div className="md:flex md:items-stretch">
