@@ -28,7 +28,7 @@ const MainBanner = () => {
             </div>
             <div className="mainbanner">
                 <Image
-                    src="\assests\header\images\mainimg.webp"
+                    src="/assests/header/images/mainimg.webp"
                     alt="Logo"
                     width={12}
                     height={32}
