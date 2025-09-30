@@ -26,12 +26,13 @@ const MainBanner = () => {
                 </p>
 
             </div>
-            <div className="mainbanner">
+            <div className="mainbanner max-w-[1100px] w-full">
                 <Image
                     src="/assests/header/images/mainimg.webp"
                     alt="Logo"
-                    width={12}
-                    height={32}
+                    width={1000}
+                    height={1000}
+                    className="banner-pic border-[20px] md:border-[50px] border-white border-b-0"
                 />
             </div>
 
